@@ -9,7 +9,7 @@ let downloadCvSlice = createSlice({
     reducers: {
         handleDownloadCv: (state, action) => {
             const link = document.createElement("a");
-            link.href = "/myPortfolio/files/MonCv.pdf"; 
+            link.href = "/mpdv/files/MonCv.pdf"; 
             link.download = "moncv.pdf";
             link.click();
         }
