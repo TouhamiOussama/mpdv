@@ -1,0 +1,634 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+.pm {
+    font-family: "Permanent Marker", cursive;
+}
+
+.bartle {
+    font-family: "BBH Bartle", sans-serif;
+}
+
+.jersey {
+    font-family: "Jersey 10", sans-serif;
+}
+
+* {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    height: auto;
+
+}
+
+:root {
+    --lightMode-text-color: #444444;
+    --lightMode-light-text-color: #9b9b9b;
+    --secondaray-color: #fb8500;
+}
+
+.defaultButton {
+    padding: 10px 20px;
+    border: unset;
+    border-radius: 10px;
+    color: #ffffff;
+    z-index: 1;
+    background: var(--secondaray-color);
+    position: relative;
+    font-weight: 700;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.defaultButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: #404040;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.defaultButton:hover {
+    color: #e8e8e8;
+}
+
+.defaultButton:hover::before {
+    width: 100%;
+}
+
+.imageBloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeImage 3s ease-out forwards;
+    z-index: 49;
+}
+
+.homeImage {
+    background-image: url(../public/images/myImage.jpg);
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 30%);
+    order: 1;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: profile_animate 8s ease-in-out infinite 1s;
+    transition: 0.5s ease;
+}
+
+.homeImage:hover {
+    box-shadow: 4px 4px 20px #3d3d3d;
+}
+
+section .sectionTitle {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.terminal {
+    width: 90%;
+    min-height: 550px;
+    max-height: 550px;
+    background: #1f1f1f;
+    margin: 2rem auto;
+    font-family: "Fira Code", "Courier New", Courier, monospace;
+    font-weight: 1000;
+    overflow-y: auto;
+}
+
+.terminalInputContainer .terminalInput {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+
+
+
+.underShape {
+    width: 435px;
+    height: 435px;
+    position: absolute;
+    background: var(--lightMode-light-text-color);
+    z-index: -1;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation: profile_animate 8s ease-in-out infinite 1s;
+    animation-delay: 3s;
+}
+
+.homeContent h1 {
+    animation: fadeInUp 2s ease-out forwards;
+
+}
+
+.homeContent p {
+    animation: fadeInUp 3s ease-out forwards;
+}
+
+.homeContent button {
+    animation: fadeInUp 4s ease-out forwards;
+}
+
+.runButton {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.skillsCard {
+    border: 3px solid var(--lightMode-text-color);
+    box-shadow: 6px 6px 0px var(--lightMode-text-color);
+    transition: 0.2s ease;
+}
+
+.skillsCard:hover {
+    box-shadow: 0px 0px 10px #2e2e2e;
+    transform: scale(0.98);
+}
+
+.skill {
+    border: 2px solid var(--lightMode-text-color);
+    box-shadow: 5px 4px 0px var(--lightMode-text-color);
+    outline: none;
+}
+
+.btn {
+    border: 2px solid var(--lightMode-text-color);
+    box-shadow: 4px 4px 0px var(--lightMode-text-color);
+    transition: 0.1s ease;
+}
+
+.btn:hover {
+    background: var(--lightMode-text-color);
+    color: white;
+    box-shadow: 4px 4px 0px var(--lightMode-light-text-color);
+}
+
+.lightBtn {
+    border: 4px solid rgb(0, 0, 0);
+    background: white;
+    box-shadow: 4px 4px 0px var(--lightMode-text-color);
+    transition: 0.1s ease;
+}
+
+.lightBtn:hover {
+    background: var(--lightMode-text-color);
+    color: white;
+    box-shadow: 4px 4px 0px var(--lightMode-light-text-color);
+    border: 4px solid #fff;
+}
+
+.aboutMeImg {}
+
+.cursor {
+    background: var(--lightMode-text-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: profile_animate 2s ease-in-out infinite 1s;
+    cursor: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* light mode button */
+
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: black;
+    box-shadow: 0 0 0 2px black;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: black;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+    right: 16px;
+}
+
+.animated-button .arr-2 {
+    left: -25%;
+}
+
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: white;
+    border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+    left: 16px;
+}
+
+.animated-button:hover .text {
+    transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+    fill: white;
+}
+
+.animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px black;
+}
+
+.animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+
+/*----------------------------------------------------*/
+
+
+/* dark mode button */
+
+.animated-dark-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 0 0 2px white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-dark-button svg {
+    position: absolute;
+    width: 24px;
+    fill: white;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-dark-button .arr-1 {
+    right: 16px;
+}
+
+.animated-dark-button .arr-2 {
+    left: -25%;
+}
+
+.animated-dark-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-dark-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-dark-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: black;
+    border-radius: 12px;
+}
+
+.animated-dark-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-dark-button:hover .arr-2 {
+    left: 16px;
+}
+
+.animated-dark-button:hover .text {
+    transform: translateX(12px);
+}
+
+.animated-dark-button:hover svg {
+    fill: black;
+}
+
+.animated-dark-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px black;
+}
+
+.animated-dark-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+
+
+
+.aboutMeImgContainer .aboutDummyNav {
+    height: 35px;
+    background: #fff;
+    border-radius: 13px 13px 0 0;
+}
+
+.aboutMeImgContainer .bottomNavBorder {
+    height: 35px;
+    background: #fff;
+    border-radius: 0 0 13px 13px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #d3d3d3;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #535353;
+    border-radius: 50px;
+    height: 50px;
+}
+
+.hideDots {
+    display: none;
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.projectItem {
+    box-shadow: 2px 2px 20px #aeaeae;
+}
+
+.projectLink span {
+    transition: 0.3s ease;
+}
+
+.projectLink:hover span {
+    transform: translateX(20%);
+}
+
+.projectOverview img {
+    z-index: 1;
+
+}
+
+.projectOverview:hover img {
+    scale: 1.2;
+}
+
+.projectOverview:hover .blurOverlay {
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.156);
+    backdrop-filter: blur(3px);
+}
+
+.lightWindow {
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.lightWindow .nav {
+    height: 40px;
+    border-bottom: 2px solid white;
+}
+
+.bubble {
+    animation: profile_animate 4s ease-in-out infinite 1s;
+}
+
+.fillText {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    background: linear-gradient(90deg,white 50%,transparent 50%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.whiteBorderedText{
+    -webkit-text-stroke: 2px #fff ;
+    color: transparent;
+}
+.darkBorderedText{
+    -webkit-text-stroke: 2px #606060 ;
+    color: transparent;
+}
+.thicDarkBorderedText{
+    -webkit-text-stroke: 3px #2e2e2e ;
+    color: transparent;
+}
+
+.link{
+    font-size: 1rem;
+}
+.footerFillText {
+    -webkit-text-stroke: 1px white ;
+    color: transparent;
+    background: linear-gradient(90deg,white 50%,transparent 50%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeImage {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .homeImage {
+        width: 350px;
+        height: 350px;
+    }
+
+    .underShape {
+        width: 375px;
+        height: 375px;
+    }
+
+    .aboutMeContent h1 {
+        font-size: 3rem;
+    }
+
+    .aboutMeContent p {
+        font-size: 1rem;
+    }
+
+    .aboutMeSection {
+        flex-direction: column;
+    }
+
+    .aboutMeSection img {
+        width: 300px;
+    }
+
+    .aboutSection .aboutMeContent {
+        width: 100%;
+    }
+
+    .skillsContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .homePageContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+        transition: 0.5s ease;
+    }
+
+    .homeImage {
+        width: 250px;
+        height: 250px;
+    }
+
+    .homePageContainer h1 {
+        font-size: 3rem;
+    }
+
+    .homePageContainer p {
+        font-size: 1rem;
+    }
+
+    .underShape {
+        width: 275px;
+        height: 275px;
+    }
+
+    .terminal {
+        width: 95%;
+    }
+
+    section .sectionTitle {
+        width: 50%;
+    }
+
+    .aboutMeSection img {
+        width: 250px;
+    }
+
+    .aboutMeSection h1 {
+        font-size: 2.5rem;
+    }
+
+    .aboutMeImgContainer .socialItem {
+        border: 2px solid rgb(67, 67, 67);
+    }
+}
+
+@keyframes profile_animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
