@@ -48,7 +48,7 @@ function MoreAboutMe() {
                                     <div className="h-[15px] w-[15px] bg-[#26ff00]  rounded-full"></div>
                                 </div>
                             </div>
-                            <img src="/myPortfolio/images/myImage4.jpg" className="w-[400px]" alt="" />
+                            <img src="/images/myImage4.jpg" className="w-[400px]" alt="" />
                             <div className="bottomNavBorder"></div>
                         </motion.div>
                     </div>

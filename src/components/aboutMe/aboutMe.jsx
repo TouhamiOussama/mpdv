@@ -64,7 +64,7 @@ function AboutMe() {
                                 <div className="h-[15px] w-[15px] bg-[#26ff00]  rounded-full"></div>
                             </div>
                         </div>
-                        <img className="aboutMeImg " src="/myPortfolio/images/myImage5.jpg" width={400} alt="" />
+                        <img className="aboutMeImg " src="/images/myImage5.jpg" width={400} alt="" />
                         <div className="bottomNavBorder"></div>
                     </motion.div>
 
