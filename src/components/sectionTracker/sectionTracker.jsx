@@ -68,7 +68,7 @@ export default function SectionTracker({ activeSection, scrollProgress }) {
                                     <a 
                                         onClick={() => setIslandOpened()}
                                         className={`text-[1.5rem] ${activeSection == section.sectionId ? 
-                                            "text-black bg-[url('/myPortfolio/icons/brush.png')] bg-no-repeat bg-center bg-contain ":
+                                            "text-black bg-[url('/icons/brush.png')] bg-no-repeat bg-center bg-contain ":
                                             "text-white"
                                         } `} href={`#${section.sectionId}`}>{section.sectionName}</a>
                                 </>

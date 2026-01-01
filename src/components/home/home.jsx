@@ -67,7 +67,7 @@ function Home() {
                     </h1>
 
                     <p className="text-[1.3rem] w-[70%] my-4 font-[400]">
-                       Hey there, I'm Oussama Touhami, I'm a full stack web developer. 
+                       Hey there, I'm Oussama Touhami, I'm a web developer. 
                     </p>
 
                     <LightButton onClick={() => downloadCv()}  buttonText="Download CV" />
