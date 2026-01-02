@@ -86,7 +86,7 @@ section {
 }
 
 .homeImage {
-    background-image: url(../public/images/myImage.jpg);
+    background-image: url(../public/images/personalImg.jpg);
     width: 400px;
     height: 400px;
     background-position: center;
