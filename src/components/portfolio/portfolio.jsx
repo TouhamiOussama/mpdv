@@ -144,7 +144,7 @@ function Portfolio() {
                 <Footer/>
                 <motion.div
                     variants={variants}
-                    transition={{type: "tween",stiffness: 300}}
+                    transition={{type: "tween",stiffness: 1000}}
                     animate={mouseVariant}
                     className="cursor max-sm:hidden"
                 />

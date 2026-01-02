@@ -204,8 +204,8 @@ section .sectionTitle {
 
 .cursor {
     background: var(--lightMode-text-color);
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     position: fixed;
     top: 0;
