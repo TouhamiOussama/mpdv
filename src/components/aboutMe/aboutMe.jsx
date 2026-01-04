@@ -14,9 +14,9 @@ function AboutMe() {
         target: ref,
         offset: ["start center", "end start"]
     });
-    const contentY = useTransform(scrollYProgress, [0, 0.4], ["200px", "0px"]);
+    const contentY = useTransform(scrollYProgress, [0, 0.4], ["400px", "-100px"]);
     const imgBlocX = useTransform(scrollYProgress, [0, 0.3], ["-200px", "0px"]);
-    const contentClipPath = useTransform(scrollYProgress,[0,0.9],["circle(0% at 50% 100%)",
+    const contentClipPath = useTransform(scrollYProgress,[0,0.6],["circle(0% at 50% 100%)",
     "circle(200% at 50% 100%)"])
     const circleClipPath = useTransform(scrollYProgress,[0,0.7],["circle(0% at 50% 0)",
     "circle(200% at 50% 0)"])
@@ -46,14 +46,14 @@ function AboutMe() {
                 ref={ref}
                 style={{clipPath: circleClipPath}}
                 transition={{type: "spring", stiffness: 1}}
-                className="darkSection overflow-hidden bg-[#111111] relative p-[1.5rem]" >
+                className="darkSection overflow-hidden bg-[#111111] relative p-[1.5rem] min-h-[100vh]" >
                 <motion.h1
                     onMouseEnter={handleTextEnter}
                     onMouseLeave={handleTextLeave}
                     className={`font-[800] sectionTitle ${sectionGlobalStyles.titleStyle} text-[white]`} >About Me</motion.h1>
 
-                <div  className="aboutMeSection  p-[2rem] py-[4rem] w-full flex items-center justify-between">
-                    <motion.div
+                <div  className="aboutMeSection  p-[2rem] py-[4rem] w-full h-[100vh] flex items-center justify-center">
+                    {/* <motion.div
                         className="aboutMeImgContainer m-4 sticky top-[30px]"
                         style={{x:imgBlocX,opacity}}
                         >
@@ -66,7 +66,7 @@ function AboutMe() {
                         </div>
                         <img className="aboutMeImg " src="/images/myImage5.jpg" width={400} alt="" />
                         <div className="bottomNavBorder"></div>
-                    </motion.div>
+                    </motion.div> */}
 
                     <motion.div
                         
