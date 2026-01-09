@@ -481,31 +481,53 @@ section .sectionTitle {
 .fillText {
     -webkit-text-stroke: 1px white;
     color: transparent;
-    background: linear-gradient(90deg,white 50%,transparent 50%);
+    background: linear-gradient(90deg, white 50%, transparent 50%);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
 }
-.whiteBorderedText{
-    -webkit-text-stroke: 2px #fff ;
-    color: transparent;
-}
-.darkBorderedText{
-    -webkit-text-stroke: 2px #606060 ;
-    color: transparent;
-}
-.thicDarkBorderedText{
-    -webkit-text-stroke: 3px #2e2e2e ;
+
+.whiteBorderedText {
+    -webkit-text-stroke: 2px #fff;
     color: transparent;
 }
 
-.link{
+.darkBorderedText {
+    -webkit-text-stroke: 2px #232323;
+    color: transparent;
+    background: linear-gradient(90deg, rgb(46, 46, 46) 50%, transparent 50%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: filling 10s ease-in-out infinite;
+}
+@keyframes filling {
+    0%{
+        background-position: 100% 0%;
+    }
+    50%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+}
+
+
+.thicDarkBorderedText {
+    -webkit-text-stroke: 3px #2e2e2e;
+    color: transparent;
+
+}
+
+.link {
     font-size: 1rem;
 }
+
 .footerFillText {
-    -webkit-text-stroke: 1px white ;
+    -webkit-text-stroke: 1px white;
     color: transparent;
-    background: linear-gradient(90deg,white 50%,transparent 50%);
+    background: linear-gradient(90deg, white 50%, transparent 50%);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
