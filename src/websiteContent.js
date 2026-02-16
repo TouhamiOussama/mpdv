@@ -159,7 +159,7 @@ export let projectCards = [
     {
         id: 5,
         name: "Food Menu Website",
-        description: "It's an app that allows you to track your incomes and expenses in the same time, It was built with React JS, Tailwind and Redux.", url: "https://oussamath.github.io/palermos/",
+        description: "It's a static website that shows the menu of a restaurant, it was build with HTML,CSS and Js", url: "https://oussamath.github.io/palermos/",
         date: "Nov 25, 2024",
         thumbnail: "/images/palermosImg.png",
         projectTechs: [
