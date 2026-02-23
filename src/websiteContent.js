@@ -89,9 +89,11 @@ export let projectCards = [
         name: "Notes App",
         description: " MyNottie is a basic CRUD fullstack app for notes, built with help of React Js and Supabase for the backend, with a simple aesthetic design, fully responsive.", url: "https://oussamath.github.io/notesApp/",
         date: "Octobre 15, 2025",
-        thumbnail: [
-            "/images/notesAppImg.png",
-            "/images/tasksAppImg.png"
+        thumbnails: [
+            "/images/notesApp1.png",
+            "/images/notesApp2.png",
+            "/images/notesApp3.png",
+            "/images/notesApp4.png",
         ],
         projectTechs: [
             {
@@ -109,7 +111,7 @@ export let projectCards = [
         name: "Tasks App",
         description: "This Tasks app is built with React Js, with a modern design, and it's easy to use with an impressive user experience. ", url: "https://oussamath.github.io/tasksApp/",
         date: "Octobre 15, 2025",
-        thumbnail: "/images/tasksAppImg.png",
+        thumbnails: ["/images/tasksAppImg.png"],
         projectTechs: [
             {
                 id: 1,
@@ -126,7 +128,13 @@ export let projectCards = [
         name: "Perfum Website",
         description: "This is a static website with a fully responsive and a modern design, built with React Js and Tailwind CSS", url: "https://oussamath.github.io/perfum/",
         date: "Octobre 15, 2025",
-        thumbnail: "/images/perfumWebsiteImg.png",
+        thumbnails: [
+            "/images/perfum1.png",
+            "/images/perfum2.png",
+            "/images/perfum3.png",
+            "/images/perfum4.png",
+            "/images/perfum5.png",
+        ],
         projectTechs: [
             {
                 id: 1,
@@ -143,7 +151,9 @@ export let projectCards = [
         name: "Money Tracker App",
         description: "It's an app that allows you to track your incomes and expenses in the same time, It was built with React JS, Tailwind and Redux.", url: "https://oussamath.github.io/moneyTrackDashboard/ ",
         date: "Octobre 15, 2025",
-        thumbnail: "/images/moneyTrackerAppImg.png",
+        thumbnails: [
+            "/images/moneyTrackerAppImg.png"
+        ],
         projectTechs: [
             {
                 id: 1,
@@ -164,7 +174,15 @@ export let projectCards = [
         name: "Food Menu Website",
         description: "It's a static website that shows the menu of a restaurant, it was build with HTML,CSS and Js", url: "https://oussamath.github.io/palermos/",
         date: "Nov 25, 2024",
-        thumbnail: "/images/palermosImg.png",
+        thumbnails: [
+            "/images/palermos1.png",
+            "/images/palermos2.png",
+            "/images/palermos3.png",
+            "/images/palermos4.png",
+            "/images/palermos5.png",
+            "/images/palermos6.png",
+            "/images/palermos7.png",
+        ],
         projectTechs: [
             {
                 id: 1,
