@@ -22,8 +22,9 @@ function ProjectCard({ project, variant }) {
                                 return <img key={item.id} src={item.img} width={25} alt={item.id} />
                             })}
                         </div>
-                        <div className="date font-[600] text-[#bababa]">
-                            {project.date}
+                        <div className="flex items-center gap-[0.3rem]">
+                            <button className="p-[0.3rem] rounded-full border-2 border-[#575757] cursor-pointer hover:bg-[#575757] hover:text-[white] " ><FaArrowLeft size={14} /></button>
+                            <button className="p-[0.3rem] rounded-full border-2 border-[#575757] cursor-pointer hover:bg-[#575757] hover:text-[white] " ><FaArrowRight size={14} /></button>
                         </div>
                     </div>
                     <h1 className="text-[2rem] font-[700] my-[0.5rem]">{project.name}</h1>
