@@ -86,6 +86,37 @@ export let SKILLS = [
 export let projectCards = [
     {
         id: 1,
+        name: "E-Commerce website",
+        description: "A full-stack furniture e-commerce platform built with React, Tailwind css, Node.js, Express.js, and MySQL, featuring dynamic product management and a responsive user interface.", url: "",
+        date: "Octobre 15, 2025",
+        thumbnails: [
+            "/images/fur1.png",
+            "/images/fur2.png",
+            "/images/fur3.png",
+            "/images/fur4.png",
+            "/images/fur5.png",
+        ],
+        projectTechs: [
+            {
+                id: 1,
+                img: "/icons/react.png"
+            },
+            {
+                id: 2,
+                img: "/icons/tailwind.png"
+            },
+            {
+                id: 3,
+                img: "/icons/nodejs.png"
+            },
+            {
+                id: 4,
+                img: "/icons/mysql.png"
+            },
+        ]
+    },
+    {
+        id: 1,
         name: "Notes App",
         description: " MyNottie is a basic CRUD fullstack app for notes, built with help of React Js and Supabase for the backend, with a simple aesthetic design, fully responsive.", url: "https://oussamath.github.io/notesApp/",
         date: "Octobre 15, 2025",
