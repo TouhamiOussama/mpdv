@@ -87,7 +87,7 @@ export let projectCards = [
     {
         id: 1,
         name: "E-Commerce website",
-        description: "A full-stack furniture e-commerce platform built with React, Tailwind css, Node.js, Express.js, and MySQL, featuring dynamic product management and a responsive user interface.", url: "",
+        description: "A full-stack furniture e-commerce website built with React, Tailwind css, Node.js, Express.js, and MySQL, featuring dynamic product management and a responsive user interface.", url: "",
         date: "Octobre 15, 2025",
         thumbnails: [
             "/images/fur1.png",
