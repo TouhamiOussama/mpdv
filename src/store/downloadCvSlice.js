@@ -10,7 +10,7 @@ let downloadCvSlice = createSlice({
         handleDownloadCv: (state, action) => {
             const link = document.createElement("a");
             link.href = "/files/cv.pdf"; 
-            link.download = "moncv.pdf";
+            link.download = "cv.pdf";
             link.click();
         }
     }
