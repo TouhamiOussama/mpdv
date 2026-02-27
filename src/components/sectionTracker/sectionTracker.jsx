@@ -51,7 +51,7 @@ export default function SectionTracker({ activeSection, scrollProgress }) {
                 </div>
             </motion.div>}
            {islandOpened && 
-             <motion.div ref={islandRef} initial={{scale: 0.7,opacity:0,y:150}} animate={{scale:1,opacity:1,transition:{type: "spring",stiffness: 150},y:0}} className="overflow-hidden bg-[#4b4b4b5a] backdrop-blur-[20px] text-white w-[400px] h-[300px] max-sm:w-[300px]  fixed left-1/2 top-[45%] -translate-x-1/2 z-[9999] rounded-xl font-[500] text-[0.8rem] border-2 border-[#c8c8c847] p-4 ">
+             <motion.div ref={islandRef} initial={{scale: 0.7,opacity:0,y:150}} animate={{scale:1,opacity:1,transition:{type: "spring",stiffness: 150},y:0}} className="overflow-hidden bg-[#4b4b4b5a] backdrop-blur-[20px] text-white w-[400px] h-[300px] max-sm:w-[300px]  fixed left-1/2 top-[55%] -translate-x-1/2 z-[9999] rounded-xl font-[500] text-[0.8rem] border-2 border-[#c8c8c847] p-4 ">
                 <motion.div >
                     <div className="flex justify-end">
                         <button onClick={() => setIslandOpened(false)} className='cursor-pointer ' >

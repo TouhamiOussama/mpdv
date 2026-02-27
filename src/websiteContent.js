@@ -235,7 +235,7 @@ export let socialMedia = [
     { id: 1, data: { followers: 31, following: 69, posts: 0, accountName: "ussa.m4", link: "https://www.instagram.com/ussa.m4?igsh=Z3cwZzBxa2hla2cx" } },
     {
         id: 2, data: {
-            accountName: "Oussama", link: "https://github.com/OussamaTh", dummyRepos: [
+            accountName: "OussamaTh", link: "https://github.com/OussamaTh", dummyRepos: [
                 { id: 1, repoName: "Project-1" },
                 { id: 2, repoName: "Project-2" },
                 { id: 3, repoName: "Project-3" },
