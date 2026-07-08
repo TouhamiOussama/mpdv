@@ -29,7 +29,7 @@ function ProjectCard({ project, variant }) {
 
     const visibleText = isExpanded
         ? project.description
-        : sentences.slice(0, 2).join(" ");
+        : sentences.slice(0, 1).join(" ");
 
     const handleNext = useCallback(() => {
         setDirection(1);
