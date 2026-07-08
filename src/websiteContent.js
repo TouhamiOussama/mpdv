@@ -85,6 +85,48 @@ export let SKILLS = [
 
 export let projectCards = [
     {
+        id: 6,
+        name: "Ecommerce website for optician",
+        description: "I built a full-stack e-commerce platform for an optician, developed entirely with Laravel (PHP), MySQL, JavaScript, CSS, and Tailwind CSS. The application features a dedicated admin dashboard for managing products, orders, product variants, order tracking, customers, and app analytics. On the customer side, it offers a clean black-and-white UI designed for comfortable product browsing, along with account creation, order tracking, personal information management, and other features found in modern e-commerce applications. The platform is fully responsive and optimized for all device types. ", url: "https://optix-store.vercel.app/",
+        date: "Nov 25, 2024",
+        thumbnails: [
+            "/images/optix1.png",
+            "/images/optix2.png",
+            "/images/optix3.png",
+            "/images/optix4.png",
+            "/images/optix5.png",
+            "/images/optix6.png",
+            "/images/optix7.png",
+            "/images/optix8.png",
+        ],
+        projectTechs: [
+            {
+                id: 1,
+                img: "/icons/html.png"
+            },
+            {
+                id: 2,
+                img: "/icons/css.png"
+            },
+            {
+                id: 3,
+                img: "/icons/js.png"
+            },
+            {
+                id: 4,
+                img: "/icons/tailwind.png"
+            },
+            {
+                id: 5,
+                img: "/icons/laravel.png"
+            },
+            {
+                id: 6,
+                img: "/icons/mysql.png"
+            },
+        ]
+    },
+    {
         id: 1,
         name: "E-Commerce website",
         description: "A full-stack furniture e-commerce website built with React, Tailwind css, Node.js, Express.js, and MySQL, featuring dynamic product management and a responsive user interface.", url: "",
@@ -229,6 +271,7 @@ export let projectCards = [
             },
         ]
     },
+
 ]
 
 export let socialMedia = [
