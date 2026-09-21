@@ -81,7 +81,7 @@ function MoreAboutMe() {
                             </div>
                             <div className="p-5">
                                 <h1 className="text-[3rem] font-[900] text-white max-md:text-[2rem]">And then ?</h1>
-                                <p className="text-[#9b9b9b]">After I've got my bachelor degree, I accomplished my studies in <strong>ISTA-Specialized Institute of Applied Technology</strong>, I took me 2 years to take my specialized technician diploma. During this 2 years, I've learnt lot of things, lot of programming languages and technologies such as <strong>React Js</strong> and <strong>Laravel</strong> etc... </p>
+                                <p className="text-[#9b9b9b]">After I've got my bacaloriat diploma, I accomplished my studies in <strong>ISTA-Specialized Institute of Applied Technology</strong>, I took me 2 years to take my specialized technician diploma. During this 2 years, I've learnt lot of things, lot of programming languages and technologies such as <strong>React Js</strong> and <strong>Laravel</strong> etc... </p>
                             </div>
                         </motion.div>
                         <motion.div

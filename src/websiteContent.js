@@ -26,6 +26,9 @@ export let SKILLS_INFO = [
     { id: 11, skillName: "GitHub", imgPath: "/icons/github.png", category: "tools" },
     { id: 12, skillName: "Office", imgPath: "/icons/office.png", category: "tools" },
     { id: 12, skillName: "NodeJs", imgPath: "/icons/nodejs.png", category: "back" },
+    { id: 13, skillName: "Laravel", imgPath: "/", category: "back" },
+    { id: 14, skillName: "Express", imgPath: "/", category: "back" },
+    { id: 15, skillName: "Figma", imgPath: "/", category: "tools" },
 ];
 
 /* export let socialMedia = [
@@ -291,7 +294,7 @@ export let socialMedia = [
 export let socialTabs = [
     { id: 1, name: "emailBox", icon: "/icons/message.png" },
     { id: 2, name: "Github", icon: "/icons/gitIcon.png" },
-    { id: 3, name: "Instagram", icon: "/icons/instagram.png" },
+   /*  { id: 3, name: "Instagram", icon: "/icons/instagram.png" }, */
 ]
 
 
