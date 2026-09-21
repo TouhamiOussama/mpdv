@@ -163,7 +163,7 @@ export let projectCards = [
     {
         id: 1,
         name: "Notes App",
-        description: " MyNottie is a basic CRUD fullstack app for notes, built with help of React Js and Supabase for the backend, with a simple aesthetic design, fully responsive.", url: "https://oussamath.github.io/notesApp/",
+        description: " MyNottie is a basic CRUD fullstack app for notes, built with help of React Js and Supabase for the database, with a simple aesthetic design, fully responsive.", url: "https://oussamath.github.io/notesApp/",
         date: "Octobre 15, 2025",
         thumbnails: [
             "/images/notesApp1.png",
