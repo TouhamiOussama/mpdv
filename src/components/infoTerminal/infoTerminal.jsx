@@ -14,7 +14,7 @@ function InfoTerminal() {
             {
                 cmd: "about-oussama",
                 result: [
-                    "Hi, I'm Oussama Touhami  a 19-year-old web developer passionate about building useful and creative digital experiences. I work with a wide range of programming languages and modern technologies, and I love turning ideas into real projects. Problem solving, learning, facing challenges is what I like most about a such a field like this."
+                    "Hi, I'm Oussama Touhami a web developer passionate about building useful and creative digital experiences. I work with a wide range of programming languages and modern technologies, and I love turning ideas into real projects. Problem solving, learning, facing challenges is what I like most about a such a field like this."
                 ]
             },
             {
